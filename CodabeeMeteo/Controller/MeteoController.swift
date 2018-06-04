@@ -11,9 +11,11 @@ import MapKit
 
 class MeteoController: UIViewController {
 
+    var locationManager: CLLocationManager?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        miseEnPlaceLocationManager()
     }
 
 }
