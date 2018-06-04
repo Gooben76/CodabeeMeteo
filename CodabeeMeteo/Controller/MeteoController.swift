@@ -18,4 +18,12 @@ class MeteoController: UIViewController {
         miseEnPlaceLocationManager()
     }
 
+    func obtenirURL(latitude:Double, longitude:Double) {
+        let urlDeBase = "http://api.openweathermap.org/data/2.5/forecast?"
+        let latitude = "lat=" + String(latitude)
+        let longitude = "&lon=" + String(longitude)
+        let unitEtLang = "&units=metric&lang=fr"
+        let cleAPI = "&APPID=" + API
+        let urlString = urlDeBase + latitude + longitude + unitEtLang + cleAPI
+    }
 }
