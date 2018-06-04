@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		17B2761120C5BF11005FAF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2761020C5BF11005FAF87 /* AppDelegate.swift */; };
-		17B2761320C5BF11005FAF87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2761220C5BF11005FAF87 /* ViewController.swift */; };
 		17B2761620C5BF11005FAF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B2761420C5BF11005FAF87 /* Main.storyboard */; };
 		17B2761820C5BF13005FAF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B2761720C5BF13005FAF87 /* Assets.xcassets */; };
 		17B2761B20C5BF13005FAF87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B2761920C5BF13005FAF87 /* LaunchScreen.storyboard */; };
+		17B2762720C5BF91005FAF87 /* MeteoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2762620C5BF91005FAF87 /* MeteoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17B2760D20C5BF11005FAF87 /* CodabeeMeteo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodabeeMeteo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B2761020C5BF11005FAF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17B2761220C5BF11005FAF87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17B2761520C5BF11005FAF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17B2761720C5BF13005FAF87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17B2761A20C5BF13005FAF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17B2761C20C5BF13005FAF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B2762620C5BF91005FAF87 /* MeteoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,46 @@
 		17B2760F20C5BF11005FAF87 /* CodabeeMeteo */ = {
 			isa = PBXGroup;
 			children = (
+				17B2762420C5BF36005FAF87 /* Model */,
+				17B2762320C5BF2D005FAF87 /* View */,
+				17B2762220C5BF1D005FAF87 /* Controller */,
+				17B2762520C5BF4D005FAF87 /* StoryBoard */,
 				17B2761020C5BF11005FAF87 /* AppDelegate.swift */,
-				17B2761220C5BF11005FAF87 /* ViewController.swift */,
-				17B2761420C5BF11005FAF87 /* Main.storyboard */,
 				17B2761720C5BF13005FAF87 /* Assets.xcassets */,
-				17B2761920C5BF13005FAF87 /* LaunchScreen.storyboard */,
 				17B2761C20C5BF13005FAF87 /* Info.plist */,
 			);
 			path = CodabeeMeteo;
+			sourceTree = "<group>";
+		};
+		17B2762220C5BF1D005FAF87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17B2762620C5BF91005FAF87 /* MeteoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17B2762320C5BF2D005FAF87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17B2762420C5BF36005FAF87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17B2762520C5BF4D005FAF87 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				17B2761420C5BF11005FAF87 /* Main.storyboard */,
+				17B2761920C5BF13005FAF87 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B2761320C5BF11005FAF87 /* ViewController.swift in Sources */,
+				17B2762720C5BF91005FAF87 /* MeteoController.swift in Sources */,
 				17B2761120C5BF11005FAF87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
