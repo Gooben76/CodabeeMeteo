@@ -43,8 +43,6 @@
 	</array>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
-	<key>NSLocationUsageDescription</key>
-	<string>Nous avons besoin de votre position pour pouvoir afficher le temps qu&apos;il fait chez vous</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Nous avons besoin de votre position pour pouvoir afficher le temps qu&apos;il fait chez vous</string>
 	<key>NSAppTransportSecurity</key>
@@ -53,6 +51,8 @@
 		<true/>
 	</dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Nous avons besoin de votre position pour pouvoir afficher le temps qu&apos;il fait chez vous</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Nous avons besoin de votre position pour pouvoir afficher le temps qu&apos;il fait chez vous</string>
 </dict>
 </plist>

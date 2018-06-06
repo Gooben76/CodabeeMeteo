@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1731B78920C80243008B9FD3 /* Prevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731B78820C80243008B9FD3 /* Prevision.swift */; };
 		17B2761120C5BF11005FAF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2761020C5BF11005FAF87 /* AppDelegate.swift */; };
 		17B2761620C5BF11005FAF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B2761420C5BF11005FAF87 /* Main.storyboard */; };
 		17B2761820C5BF13005FAF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B2761720C5BF13005FAF87 /* Assets.xcassets */; };
@@ -14,9 +15,11 @@
 		17B2762720C5BF91005FAF87 /* MeteoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2762620C5BF91005FAF87 /* MeteoController.swift */; };
 		17C28CF220C5C30600D35A28 /* LocalisationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C28CF120C5C30600D35A28 /* LocalisationExtension.swift */; };
 		17C28CF520C5C87D00D35A28 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C28CF420C5C87D00D35A28 /* API.swift */; };
+		E275DC1304E55941E79F5E6B /* Pods_CodabeeMeteo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732A428E292E33F7C714746E /* Pods_CodabeeMeteo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1731B78820C80243008B9FD3 /* Prevision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prevision.swift; sourceTree = "<group>"; };
 		17B2760D20C5BF11005FAF87 /* CodabeeMeteo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodabeeMeteo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B2761020C5BF11005FAF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B2761520C5BF11005FAF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		17B2762620C5BF91005FAF87 /* MeteoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoController.swift; sourceTree = "<group>"; };
 		17C28CF120C5C30600D35A28 /* LocalisationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalisationExtension.swift; sourceTree = "<group>"; };
 		17C28CF420C5C87D00D35A28 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		1A2ED1D71630C252CCF864A1 /* Pods-CodabeeMeteo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.release.xcconfig"; sourceTree = "<group>"; };
+		3A29FCD89156DCDE2FF573AD /* Pods-CodabeeMeteo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.debug.xcconfig"; sourceTree = "<group>"; };
+		732A428E292E33F7C714746E /* Pods_CodabeeMeteo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodabeeMeteo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E275DC1304E55941E79F5E6B /* Pods_CodabeeMeteo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				17B2760F20C5BF11005FAF87 /* CodabeeMeteo */,
 				17B2760E20C5BF11005FAF87 /* Products */,
+				AB6BAEA1AADD12C49A72082C /* Pods */,
+				A07B173331571A32C7979EFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +98,7 @@
 		17B2762420C5BF36005FAF87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1731B78820C80243008B9FD3 /* Prevision.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +120,23 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		A07B173331571A32C7979EFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				732A428E292E33F7C714746E /* Pods_CodabeeMeteo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB6BAEA1AADD12C49A72082C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A29FCD89156DCDE2FF573AD /* Pods-CodabeeMeteo.debug.xcconfig */,
+				1A2ED1D71630C252CCF864A1 /* Pods-CodabeeMeteo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17B2761F20C5BF13005FAF87 /* Build configuration list for PBXNativeTarget "CodabeeMeteo" */;
 			buildPhases = (
+				0B56E1637012B6165E9D43AD /* [CP] Check Pods Manifest.lock */,
 				17B2760920C5BF11005FAF87 /* Sources */,
 				17B2760A20C5BF11005FAF87 /* Frameworks */,
 				17B2760B20C5BF11005FAF87 /* Resources */,
+				BC7BB6BD3DA7BECC37F5BFF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +205,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B56E1637012B6165E9D43AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodabeeMeteo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC7BB6BD3DA7BECC37F5BFF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17B2760920C5BF11005FAF87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -183,6 +251,7 @@
 			files = (
 				17C28CF220C5C30600D35A28 /* LocalisationExtension.swift in Sources */,
 				17B2762720C5BF91005FAF87 /* MeteoController.swift in Sources */,
+				1731B78920C80243008B9FD3 /* Prevision.swift in Sources */,
 				17C28CF520C5C87D00D35A28 /* API.swift in Sources */,
 				17B2761120C5BF11005FAF87 /* AppDelegate.swift in Sources */,
 			);
@@ -326,6 +395,7 @@
 		};
 		17B2762020C5BF13005FAF87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A29FCD89156DCDE2FF573AD /* Pods-CodabeeMeteo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +414,7 @@
 		};
 		17B2762120C5BF13005FAF87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2ED1D71630C252CCF864A1 /* Pods-CodabeeMeteo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
