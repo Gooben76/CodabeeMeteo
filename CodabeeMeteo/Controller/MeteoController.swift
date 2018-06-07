@@ -13,13 +13,20 @@ import Alamofire
 class MeteoController: UIViewController {
 
     @IBOutlet weak var villeLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var iconeImageView: UIImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var previsionTableView: UITableView!
     
     var locationManager: CLLocationManager?
     var previsions = [Prevision]()
     
+    let cellID = "PrevisionCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         miseEnPlaceLocationManager()
+        miseEnPlace()
     }
 
     func obtenirURL(latitude:Double, longitude:Double) {
@@ -44,7 +51,7 @@ class MeteoController: UIViewController {
                                                 if let weather = weatherData[0] as? [String: AnyObject] {
                                                     if let desc = weather["description"] as? String {
                                                         if let icon = weather["icon"] as? String {
-                                                            if let date = dict[""] as? String {
+                                                            if let date = dict["dt_txt"] as? String {
                                                                 let nouvellePrevision = Prevision(temperature: temperature, date: date, icone: icon, desc: desc)
                                                                 self.previsions.append(nouvellePrevision)
                                                             }
@@ -56,10 +63,20 @@ class MeteoController: UIViewController {
                                     }
                                 }
                             }
+                            self.miseAJourDonneeDuMoment()
+                            self.previsionTableView.reloadData()
                         }
                     }
                 }
             }
+        }
+    }
+    
+    func miseAJourDonneeDuMoment() {
+        if previsions.count > 0 {
+            temperatureLabel.text = previsions[0].temperature.convertirDoubleToIntToSTring()
+            descriptionLabel.text = previsions[0].desc
+            ImageDownloader.obtenir.obtenirImageDepuis(previsions[0].icone, imageView: iconeImageView)
         }
     }
 }

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1731B78920C80243008B9FD3 /* Prevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731B78820C80243008B9FD3 /* Prevision.swift */; };
+		175C6C7320C99F9A00268DCA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C6C7220C99F9A00268DCA /* Extensions.swift */; };
+		175C6C7520C9AEEC00268DCA /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C6C7420C9AEEC00268DCA /* ImageDownloader.swift */; };
+		175C6C7920C9B87700268DCA /* PrevisionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C6C7820C9B87700268DCA /* PrevisionCell.swift */; };
+		175C6C7B20C9BBAA00268DCA /* DonneeUniqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C6C7A20C9BBAA00268DCA /* DonneeUniqueCell.swift */; };
+		175C6C7D20C9C00300268DCA /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C6C7C20C9C00300268DCA /* TableViewExtension.swift */; };
 		17B2761120C5BF11005FAF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2761020C5BF11005FAF87 /* AppDelegate.swift */; };
 		17B2761620C5BF11005FAF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B2761420C5BF11005FAF87 /* Main.storyboard */; };
 		17B2761820C5BF13005FAF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B2761720C5BF13005FAF87 /* Assets.xcassets */; };
@@ -20,6 +25,11 @@
 
 /* Begin PBXFileReference section */
 		1731B78820C80243008B9FD3 /* Prevision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prevision.swift; sourceTree = "<group>"; };
+		175C6C7220C99F9A00268DCA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		175C6C7420C9AEEC00268DCA /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		175C6C7820C9B87700268DCA /* PrevisionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisionCell.swift; sourceTree = "<group>"; };
+		175C6C7A20C9BBAA00268DCA /* DonneeUniqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonneeUniqueCell.swift; sourceTree = "<group>"; };
+		175C6C7C20C9C00300268DCA /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		17B2760D20C5BF11005FAF87 /* CodabeeMeteo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodabeeMeteo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B2761020C5BF11005FAF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B2761520C5BF11005FAF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +94,7 @@
 			children = (
 				17B2762620C5BF91005FAF87 /* MeteoController.swift */,
 				17C28CF120C5C30600D35A28 /* LocalisationExtension.swift */,
+				175C6C7C20C9C00300268DCA /* TableViewExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,6 +102,8 @@
 		17B2762320C5BF2D005FAF87 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				175C6C7820C9B87700268DCA /* PrevisionCell.swift */,
+				175C6C7A20C9BBAA00268DCA /* DonneeUniqueCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				1731B78820C80243008B9FD3 /* Prevision.swift */,
+				175C6C7220C99F9A00268DCA /* Extensions.swift */,
+				175C6C7420C9AEEC00268DCA /* ImageDownloader.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,10 +265,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				17C28CF220C5C30600D35A28 /* LocalisationExtension.swift in Sources */,
+				175C6C7B20C9BBAA00268DCA /* DonneeUniqueCell.swift in Sources */,
+				175C6C7320C99F9A00268DCA /* Extensions.swift in Sources */,
+				175C6C7520C9AEEC00268DCA /* ImageDownloader.swift in Sources */,
 				17B2762720C5BF91005FAF87 /* MeteoController.swift in Sources */,
 				1731B78920C80243008B9FD3 /* Prevision.swift in Sources */,
+				175C6C7920C9B87700268DCA /* PrevisionCell.swift in Sources */,
 				17C28CF520C5C87D00D35A28 /* API.swift in Sources */,
 				17B2761120C5BF11005FAF87 /* AppDelegate.swift in Sources */,
+				175C6C7D20C9C00300268DCA /* TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
