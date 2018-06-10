@@ -20,6 +20,10 @@ class MeteoController: UIViewController {
     
     var locationManager: CLLocationManager?
     var previsions = [Prevision]()
+    var previsionsJournalieres = [PrevisionJournaliere]()
+    var enTrainObtenirLesDonnees = false
+    var jour = UIColor(red: 0, green: 191/255, blue: 1, alpha: 1)
+    var nuit = UIColor(red: 19/255, green: 24/255, blue: 98/255, alpha: 1)
     
     let cellID = "PrevisionCell"
     
@@ -30,6 +34,7 @@ class MeteoController: UIViewController {
     }
 
     func obtenirURL(latitude:Double, longitude:Double) {
+        enTrainObtenirLesDonnees = true
         let urlDeBase = "http://api.openweathermap.org/data/2.5/forecast?"
         let latitude = "lat=" + String(latitude)
         let longitude = "&lon=" + String(longitude)
@@ -64,7 +69,7 @@ class MeteoController: UIViewController {
                                 }
                             }
                             self.miseAJourDonneeDuMoment()
-                            self.previsionTableView.reloadData()
+                            self.obtenirPrevisionsJournalieres()
                         }
                     }
                 }
@@ -77,6 +82,47 @@ class MeteoController: UIViewController {
             temperatureLabel.text = previsions[0].temperature.convertirDoubleToIntToSTring()
             descriptionLabel.text = previsions[0].desc
             ImageDownloader.obtenir.obtenirImageDepuis(previsions[0].icone, imageView: iconeImageView)
+            if previsions[0].icone.contains("d") {
+                view.backgroundColor = jour
+            } else {
+                view.backgroundColor = nuit
+            }
         }
+    }
+    
+    func obtenirPrevisionsJournalieres() {
+        var jour = ""
+        var icone = ""
+        var desc = ""
+        var min = 0.0
+        var max = 0.0
+        for prevision in previsions {
+            if prevision.jour != "" {
+                if prevision.jour != jour {
+                    if jour != "" {
+                        let nouvellePrevisionJournaliere = PrevisionJournaliere(jour: jour, icone: icone, desc: desc, min: min, max: max)
+                        previsionsJournalieres.append(nouvellePrevisionJournaliere)
+                    }
+                    jour = prevision.jour
+                    icone = prevision.icone
+                    desc = prevision.desc
+                    min = prevision.temperature
+                    max = prevision.temperature
+                } else {
+                    if prevision.temperature > max {
+                        max = prevision.temperature
+                    }
+                    if prevision.temperature < min {
+                        min = prevision.temperature
+                    }
+                    if prevision.date.contains("12:") {
+                        icone = prevision.icone
+                        desc = prevision.desc
+                    }
+                }
+            }
+        }
+        enTrainObtenirLesDonnees = false
+        self.previsionTableView.reloadData()
     }
 }
